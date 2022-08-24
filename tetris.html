@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tetris.css" />
+    <title>Tetris</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="heading">Tetris</h1>
+      <br />
+    </div>
+    <div class="content">
+      <canvas id="tetris" width="400" height="400"> </canvas>
+      <div class="sidebar-container">
+        <div class="sidebar">
+          <h3>How To Play?</h3>
+          <ul>
+            <li>
+              For Moving Left, Right and Down use the respective arrow keys
+            </li>
+            <li>For Rotation use the Up key</li>
+          </ul>
+        </div>
+        <div class="count">
+          Score :
+          <div id="score">0</div>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+    <script src="./tetris.js"></script>
+  </body>
+</html>
