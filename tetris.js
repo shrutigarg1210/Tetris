@@ -13,7 +13,8 @@ function drawSquare(x, y, color) {
   ctx.fillRect(x * sq, y * sq, sq, sq);
 
   ctx.strokeStyle = "#383737";
-  ctx.strokeRect(x * sq, y * sq, sq, sq);
+  ctx.strokeRect(x * sq, y * sq, sq, sq);  //API draws a rectangle that is stroked (outlined) according to the current strokeStyle and other context settings
+  //This method draws directly to the canvas without modifying the current path, so any subsequent fill() or stroke() calls will have no effect on it.
 }
 //create the board
 let board = [];
@@ -174,6 +175,7 @@ Piece.prototype.lock = function () {
   // update score
   scoreElement.innerHTML = score;
 };
+
 //Colision function
 Piece.prototype.collision = function (x, y, piece) {
   for (r = 0; r < piece.length; r++) {
